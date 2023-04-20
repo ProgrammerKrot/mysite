@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    <style>
+      body {
+        background-image: url('/static/background2.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        font-size: 1.5rem; /* увеличиваем размер шрифта */
+        color: white;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+      }
+
+      blockquote {
+        font-size: 1.5rem;
+        margin: 2rem auto;
+        max-width: 60%;
+      }
+
+      #social-links {
+        margin-top: 1rem; /* уменьшаем расстояние между блоками */
+      }
+
+      #social-links a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        background-size: cover;
+      }
+
+      #music-links а {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        background-size: cover;
+      }
+
+      #social-links a.vk {
+        background-image: url('/static/vk.png');
+      }
+
+      #social-links a.facebook {
+        background-image: url('/static/facebook.png');
+      }
+
+      #social-links a.instagram {
+        background-image: url('/static/instagram.png');
+      }
+
+      #music-links a.music {
+        background-image: url('/static/yanmusic.png');
+      }
+
+      #secondary-quote {
+        font-size: 1.2rem;
+        margin-top: 0.5rem; /* уменьшаем расстояние между блоками */
+      }
+
+      #credits {
+        font-size: 1rem;
+        margin-top: 2rem;
+      }
+
+      #extra {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WerterKrot</h1>
+
+    <blockquote>
+      "А дзе то цяпер роўна апоўдні"
+    </blockquote>
+
+    <blockquote id="secondary-quote">
+      Follow me here:
+    </blockquote>
+
+    <div id="social-links">
+      <a href="https://twitter.com/mytwitter" class="vk"></a>
+      <a href="https://www.facebook.com/myfacebook" class="facebook"></a>
+      <a href="https://www.instagram.com/myinstagram" class="instagram"></a>
+    </div>
+
+    <p id="credits">WerterKrot a.k.a. NikitaLuksha</p>
+
+    <div id="music-links">
+      <a href="https://music.yandex.ru/users/ForDaZ12/playlists/1007?lang=en" class="music"></a>
+    </div>
+
+  </body>
+</html>
+
