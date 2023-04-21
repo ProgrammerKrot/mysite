@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    <style>
+      body {
+        background-image: url('/static/background8.jpg');
+        background-size: cover;
+        background-position: right;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        font-size: 1.5rem; /* увеличиваем размер шрифта */
+        color: white;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+      }
+
+      blockquote {
+        font-size: 1.5rem;
+        margin: 2rem auto;
+        max-width: 60%;
+      }
+
+      #language-switch {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+      }
+
+      #language-switch a {
+        display: inline-block;
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #language-switch a:hover {
+        opacity: 0.7;
+      }
+
+      #social-links {
+        margin-top: 1rem; /* уменьшаем расстояние между блоками */
+      }
+
+      #social-links a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        background-size: cover;
+      }
+
+      #social-links a.vk {
+        background-image: url('/static/vk.png');
+      }
+
+      #social-links a.facebook {
+        background-image: url('/static/facebook.png');
+      }
+
+      #social-links a.instagram {
+        background-image: url('/static/instagram.png');
+      }
+
+      #social-links a.github {
+        background-image: url('/static/github.png');
+      }
+
+      #secondary-quote {
+        font-size: 1.2rem;
+        margin-top: 0.5rem; /* уменьшаем расстояние между блоками */
+      }
+
+      #credits {
+        font-size: 1rem;
+        margin-top: 2rem;
+      }
+
+      #extra {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Никита Лукша</h1>
+
+    <blockquote>
+      "А где то сейчас ровно полдень"
+    </blockquote>
+
+    <blockquote id="secondary-quote">
+      Я в социальных сетях:
+    </blockquote>
+
+    <div id="social-links">
+      <a href="https://vk.com/opermixf" class="vk"></a>
+      <a href="https://www.facebook.com/profile.php?id=100087149138064" class="facebook"></a>
+      <a href="https://instagram.com/krotvostok?igshid=YmMyMTA2M2Y=" class="instagram"></a>
+      <a href="https://github.com/ProgrammerKrot" class="github"></a>
+    </div>
+
+    <div id="language-switch">
+      <a href="http://127.0.0.1:5000/ru">RU</a>
+      <a href="http://127.0.0.1:5000/en">EN</a>
+      <a href="http://127.0.0.1:5000/por">POR</a>
+      <a href="http://127.0.0.1:5000/bel">BEL</a>
+    </div>
+
+    <p id="credits">Сделано Вертером Кротом</p>
+
+
+</body>
+</html>
+
+
