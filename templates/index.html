@@ -4,8 +4,9 @@
     <title>My Page</title>
     <style>
       body {
-        background-image: url('/static/background3.jpg');
+        background-image: url('/static/background8.jpg');
         background-size: cover;
+        background-position: right;
         font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
@@ -27,6 +28,32 @@
         font-size: 1.5rem;
         margin: 2rem auto;
         max-width: 60%;
+      }
+
+      #language-switch {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+      }
+
+      #language-switch a {
+        display: inline-block;
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #language-switch a:hover {
+        opacity: 0.7;
       }
 
       #social-links {
@@ -89,6 +116,14 @@
       <a href="https://instagram.com/krotvostok?igshid=YmMyMTA2M2Y=" class="instagram"></a>
       <a href="https://github.com/ProgrammerKrot" class="github"></a>
     </div>
+
+    <div id="language-switch">
+      <a href="http://127.0.0.1:5000/ru">RU</a>
+      <a href="http://127.0.0.1:5000/en">EN</a>
+      <a href="http://127.0.0.1:5000/por">POR</a>
+      <a href="http://127.0.0.1:5000/bel">BEL</a>
+    </div>
+
 
     <p id="credits">WerterKrot a.k.a. NikitaLuksha</p>
 
